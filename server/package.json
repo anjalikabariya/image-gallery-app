@@ -1,0 +1,23 @@
+{
+  "name": "kisi-marketing-technical-test",
+  "version": "1.0.0",
+  "description": "This is a boilerplate repository used for Kisi's marketing technical challenge. It comes with an [images](./images/) directory pre-populated with some images and a [data](./data/) directory with simple articles which will be used in the challenge.",
+  "main": "index.js",
+  "scripts": {
+    "test":"mocha *.test.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "lint": "eslint src --ext .js,.jsx",
+    "precommit": "lint-staged"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "lint-staged": "^15.0.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}
