@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+/* Define a CSS variable */
+:root {
+    --purple: #222647;
+    --blue: #4A52FF;
+    --tint: #C9CBFF;
+    --black: #191919;
+    --gray: #C7C5C3;
+    --white: #FFFFFF;
+    --green: #96E697;
+    --yellow: #FFFB94;
+}
+:root {
+    background: var(--black);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    line-height: 2.75rem;
+    letter-spacing: -0.08rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2, h3 {
+    line-height: 1.5rem;
+    letter-spacing: -0.05rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    line-height: 1.5rem;
+    letter-spacing: 0.015rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: var(--black);
 }

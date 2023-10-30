@@ -4,7 +4,7 @@
   "description": "This is a boilerplate repository used for Kisi's marketing technical challenge. It comes with an [images](./images/) directory pre-populated with some images and a [data](./data/) directory with simple articles which will be used in the challenge.",
   "main": "index.js",
   "scripts": {
-    "test":"mocha *.test.js",
+    "test": "mocha *.test.js",
     "dev": "nodemon index.js",
     "start": "node index.js",
     "lint": "eslint src --ext .js,.jsx",
@@ -14,7 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "express-fileupload": "^1.4.1",
     "fs": "^0.0.1-security",
     "lint-staged": "^15.0.2",
     "nodemon": "^3.0.1",

@@ -1,0 +1,43 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+  
+  .modal-content {
+    background: var(--tint);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .modal-content > input, .modal-content > button {
+    margin: 1rem 0 0 0;
+  }
+  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .upload-button {
+    background: var(--tint);
+    width: 100%;
+    height: 3rem;
+  }

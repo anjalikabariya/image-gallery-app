@@ -1,0 +1,87 @@
+.gallery {
+  column-count: 3;
+  column-width: 33%;
+  padding: 0 12px;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  color: var(--white);
+}
+
+.card {
+  position: relative;
+  background-color: var(--black);
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+  -webkit-transition: all 350ms ease;
+  -moz-transition: all 350ms ease;
+  height: fit-content;
+}
+
+.card::after {
+  content: '>';
+  right: 0;
+  bottom: 0;
+  color: var(--white);
+  padding: 1.25rem;
+  position: absolute;
+}
+
+.card img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+@media (max-width: 991px) { 
+  .gallery { 
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+  }
+}
+
+@media (max-width: 480px) { 
+  .gallery { 
+    column-count: 1;
+    column-width: 100%;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+  }
+}
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.card-description {
+  font-size: 1rem;
+  font-weight: 400;
+  visibility: hidden;
+}
+
+.card:hover {
+  background: var(--purple);
+}
+
+.card:hover > img {
+  visibility: hidden;
+}
+
+.card:hover .card-description {
+  visibility: visible;
+}
