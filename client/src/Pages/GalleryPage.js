@@ -4,7 +4,8 @@ import useImageFetcher from '../Hooks/useImageFetcher';
 import GalleryCard from '../Components/GalleryCard';
 import './GalleryPage.css';
 
-const API_URL = "http://localhost:8000"
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000'
+
 const GalleryPage = () => {
   const [articles, setArticles] = useState([])
   const { images, loading, error, refetchImages } = useImageFetcher();

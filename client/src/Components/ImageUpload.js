@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ImageUpload.css';
-const API_URL = 'http://localhost:8000';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000'
 
 const ImageUploadComponent = ({ refetchImages }) => {
   const [showModal, setShowModal] = useState(false);
