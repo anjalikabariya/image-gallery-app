@@ -2,7 +2,7 @@
 
 This is a boilerplate repository used for Kisi's marketing technical challenge. It comes with an [images](./images/) directory pre-populated with some images and a [data](./data/) directory with simple articles which will be used in the challenge.
 
-## Instructions to run project locally
+# Instructions to run project locally
 
 run the following command in base directory:
 
@@ -10,18 +10,31 @@ run the following command in base directory:
 
 Working application can be found on http://localhost:3000
 
-## Project Structure
+# Project Structure
 
--client: frontend created using create-react-app
---src:
----components: directory containing small components. This includes GalleryCard and ImageUploader components
----pages: directory containing pages of application
----hooks: directory containing custom hook for fetching images
+## Client
+Frontend created using create-react-app
 
--server: backend api and service created using NodeJs and ExpressJS
---index.js: entry point for server. API endpoints for image service are exposed here
---image.service.js: get and post image service
---images: directory containing images
---data: directory containing json file for articles.
----articles.json: file containing json data for articles associated with images
+### src
+- **components**: Directory containing small components.
+  - `GalleryCard`: Component for displaying image cards.
+  - `ImageUploader`: Component for uploading images.
+
+- **pages**: Directory containing pages of application.
+
+- **hooks**: Directory containing custom hooks.
+  - `useImageFetcher`: Hook for fetching images.
+
+## Server
+Backend API and service created using NodeJs and ExpressJS
+
+- **index.js**: Entry point for the server. API endpoints for image service are exposed here.
+
+- **image.service.js**: Service for handling image operations.
+  
+- **images**: Directory containing images.
+
+- **data**: Directory containing JSON file for articles.
+  - `articles.json`: JSON data for articles associated with images.
+
 
