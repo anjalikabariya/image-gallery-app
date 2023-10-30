@@ -1,5 +1,5 @@
-import GalleryPage from './Pages/GalleryPage'
-import './App.css';
+import GalleryPage from "./Pages/GalleryPage";
+import "./App.css";
 
 function App() {
   return (
@@ -10,4 +10,3 @@ function App() {
 }
 
 export default App;
-

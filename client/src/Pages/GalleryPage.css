@@ -21,7 +21,7 @@
 }
 
 .card::after {
-  content: '>';
+  content: ">";
   right: 0;
   bottom: 0;
   color: var(--white);
@@ -34,16 +34,16 @@
   opacity: 0.5;
 }
 
-@media (max-width: 991px) { 
-  .gallery { 
+@media (max-width: 991px) {
+  .gallery {
     column-count: 2;
     -webkit-column-count: 2;
     -moz-column-count: 2;
   }
 }
 
-@media (max-width: 480px) { 
-  .gallery { 
+@media (max-width: 480px) {
+  .gallery {
     column-count: 1;
     column-width: 100%;
     -webkit-column-count: 1;

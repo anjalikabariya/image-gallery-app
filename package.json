@@ -1,0 +1,21 @@
+{
+    "name": "image-gallery-app",
+    "version": "1.0.0",
+    "description": "Image Gallery App",
+    "scripts": {
+      "start": "node backend/server.js",
+      "server": "nodemon server/index.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "build": "cd client && npm install && npm run build"
+    },
+    "author": "Anjali",
+    "license": "MIT",
+    "dependencies": {
+      "bcryptjs": "^2.4.3"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.1",
+      "nodemon": "^3.0.1"
+    }
+  }

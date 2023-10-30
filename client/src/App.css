@@ -1,37 +1,38 @@
 /* Define a CSS variable */
 :root {
-    --purple: #222647;
-    --blue: #4A52FF;
-    --tint: #C9CBFF;
-    --black: #191919;
-    --gray: #C7C5C3;
-    --white: #FFFFFF;
-    --green: #96E697;
-    --yellow: #FFFB94;
+  --purple: #222647;
+  --blue: #4a52ff;
+  --tint: #c9cbff;
+  --black: #191919;
+  --gray: #c7c5c3;
+  --white: #ffffff;
+  --green: #96e697;
+  --yellow: #fffb94;
 }
 :root {
-    background: var(--black);
+  background: var(--black);
 }
 
 h1 {
-    line-height: 2.75rem;
-    letter-spacing: -0.08rem;
+  line-height: 2.75rem;
+  letter-spacing: -0.08rem;
 }
 
-h2, h3 {
-    line-height: 1.5rem;
-    letter-spacing: -0.05rem;
+h2,
+h3 {
+  line-height: 1.5rem;
+  letter-spacing: -0.05rem;
 }
 
 p {
-    line-height: 1.5rem;
-    letter-spacing: 0.015rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.015rem;
 }
 
 .app {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    background: var(--black);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--black);
 }
