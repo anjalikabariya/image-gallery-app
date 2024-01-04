@@ -1,6 +1,5 @@
-# kisi-marketing-technical-test
-
-This is a boilerplate repository used for Kisi's marketing technical challenge. It comes with an [images](./images/) directory pre-populated with some images and a [data](./data/) directory with simple articles which will be used in the challenge.
+# Deployed on: https://image-gallery-app-frontend.onrender.com/
+Backend API: https://image-gallery-app.onrender.com/images/
 
 # Instructions to run project locally
 
